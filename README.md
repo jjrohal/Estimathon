@@ -1,2 +1,17 @@
-# Estimathon
-Resources for running an Estimathon both in-person and virtually
+![Estimathon logo](./estimathon.png)
+
+The [Estimathon](https://www.estimathon.com), a team-based competition devised by [Jane Street](https://www.janestreet.com), is a unique blend of trivia, game theory, and mathematical reasoning. Teams are given 30 minutes to tackle 13 estimation problems, and the team with the most accurate estimates emerges victorious. Hosting an Estimathon can serve as an excellent team-building activity. The questions posed in these contests are sometimes known as [Fermi problems](https://en.wikipedia.org/wiki/Fermi_problem). A Fermi problem challenges participants to estimate answers to seemingly impossible-to-calculate questions. A classic example is, "How many licks does it take to reach the center of a Tootsie Roll Pop?" a question requiring assumptions due to scarce data.
+
+Included in this repository are the materials needed to conduct an Estimathon both in-person or virtually. The sample resources were used to run an Estimathon during a 75-minute slot during the FDIC Data Summit in 2025.
+* **Estimathon Rules:** Concise rules and a presentation slide deck for using before the contest.
+* **Estimathon Guide:** Comprehensive instructions for hosting an Estimathon from Jane Street.
+* **Answer Slip:** A template for in-person team submissions.
+* **Scoreboard:** Two Excel templates to manage a live scoreboard, including tabs for collaborative online data entry.
+* **Estimathon Questions:** A sample set of 13 questions to be shared with contestants. 
+* **Estimathon Answers:** Answers to the questions to be shared after the competition. 
+
+Running an in-person event requires one or more graders to update the [`Estimathon_scoreboard_empty.xlsx`](./Estimathon_scoreboard_empty.xlsx) file in real-time, which can be done by sharing the spreadsheet and giving editing privileges to all the graders, and displaying the Scoreboard tab on a separate screen for the contestants. For a virtual event, one can share the [`Estimathon_scoreboard_empty_Virtual.xlsx`](./Estimathon_scoreboard_empty_Virtual.xlsx) file with all the contestants and require that each team do the data entry themselves. An online moderator will need to create breakout rooms for each team and help facilitate the virtual participants. The rules slide deck includes some instructions to share with virtual participants before the competition.
+
+For fun, I suggest giving the problems to a number of LLMs with the prompt `Answer the following question by giving a good lower bound and upper bound: {question}` to serve as a benchmark for the competitors. In the template above I used OpenAI's o1-preview model, but comparing a number of reasoning or instruction-tuned models is entertaining for participants.
+
+To enhance your Estimathon experience and find additional questions, there are a number of external resources. There's a thriving subreddit dedicated to estimation at [/r/estimation](https://www.reddit.com/r/estimation/) that could provide inspiration or additional challenges. The Science Olympiad, an international STEM competition for middle and high school students, features a Fermi question event (see [Science Olympiad Fermi Questions](https://www.soinc.org/fermi-questions-c) and [Science Olympiad Student Center Wiki](https://scioly.org/wiki/index.php/Fermi_Questions)). Additionally, Timothy Gowers, a famous mathematician, [provides insights](https://gowers.wordpress.com/2012/06/08/how-should-mathematics-be-taught-to-non-mathematicians/) on how Fermi problems encourage people to analyze real-world situations and make reasoned estimates based on limited information, fostering critical thinking and enhancing data literacy. For even more problems, several books with collections of Fermi problems are available in the Further Reading section of the [Fermi problem Wikipedia page](https://en.wikipedia.org/wiki/Fermi_problem#Further_reading).
